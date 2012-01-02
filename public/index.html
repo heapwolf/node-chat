@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='/index.css' rel='stylesheet'/>
+    <script src='http://code.jquery.com/jquery-1.6.1.min.js'></script>
+    <script src='/socket.io/socket.io.js'></script>
+    <script src='/index.js'></script>
+  </head>
+  <body>
+   <h1>Node.js Chat Demo</h1>
+   <div id="chat">
+      <div id="nickname">
+        <form class="wrap" id="set-nickname">
+          <p>Please type in your nickname and press enter.</p>
+          <input id="nick" type="text"/>
+          <p id="nickname-err">Nickname already in use</p>
+        </form>
+      </div>
+      <div id="connecting">
+        <div class="wrap">Connecting to socket.io server</div>
+      </div>
+      <div id="messages">
+        <div id="nicknames"></div>
+        <div id="lines"></div>
+      </div>
+      <form id="send-message">
+        <input id="message" type="text"/>
+        <button value="">Send</button>
+      </form>
+  </body>
+</html>

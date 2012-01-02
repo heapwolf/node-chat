@@ -1,0 +1,11 @@
+{
+  "name": "chat",
+  "description": "A simple chat application",
+  "version": "0.0.1",
+  "author": "General Assembly <info@generalassemb.ly>",
+  "dependencies": {
+    "socket.io": "*",
+    "node-static": "*"
+  },
+  "engines": { "node": "*" }
+}
