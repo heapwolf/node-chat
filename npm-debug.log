@@ -1,0 +1,136 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'jitsu', '-g' ]
+info using npm@1.1.0-3
+info using node@v0.6.9
+verbose config file /Users/paolo/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+verbose cache add [ 'jitsu', null ]
+silly cache add: name, spec, args [ undefined, 'jitsu', [ 'jitsu', null ] ]
+verbose parsed url { pathname: 'jitsu', path: 'jitsu', href: 'jitsu' }
+verbose addNamed [ 'jitsu', '' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'jitsu', '', false ]
+verbose raw, before any munging jitsu
+verbose url resolving [ 'https://registry.npmjs.org/', './jitsu' ]
+verbose url resolved https://registry.npmjs.org/jitsu
+verbose etag "5YMWEEO8S0GVT4HWPYMSY511V"
+http GET https://registry.npmjs.org/jitsu
+http 304 https://registry.npmjs.org/jitsu
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B04)',
+silly get cb     etag: '"5YMWEEO8S0GVT4HWPYMSY511V"',
+silly get cb     date: 'Thu, 09 Feb 2012 00:34:10 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag jitsu from cache
+silly name, range, hasData 2 [ 'jitsu', '', true ]
+silly versions [ 'jitsu',
+silly versions   [ '0.4.14',
+silly versions     '0.4.15',
+silly versions     '0.4.16',
+silly versions     '0.5.0',
+silly versions     '0.5.0-1',
+silly versions     '0.6.0',
+silly versions     '0.6.1',
+silly versions     '0.6.1-1',
+silly versions     '0.6.2',
+silly versions     '0.6.3',
+silly versions     '0.7.0',
+silly versions     '0.7.0-1',
+silly versions     '0.7.0-2',
+silly versions     '0.7.1',
+silly versions     '0.7.2',
+silly versions     '0.7.2-1',
+silly versions     '0.7.3',
+silly versions     '0.7.4',
+silly versions     '0.7.4-1',
+silly versions     '0.7.5',
+silly versions     '0.7.6',
+silly versions     '0.7.6-1',
+silly versions     '0.7.7' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.19-darwin-x64-11.2.0',
+verbose bin dist   { shasum: '9ea06205daea824cb8bf3aa8409f19624c6b2b75',
+verbose bin dist     tarball: 'http://registry.npmjs.org/jitsu/-/jitsu-0.7.7.tgz' } ]
+verbose caching /Users/paolo/.npm/jitsu/0.7.7/package/package.json
+verbose loadDefaults jitsu@0.7.7
+silly resolved [ { name: 'jitsu',
+silly resolved     description: 'Flawless command line deployment of your Node.js apps to the cloud',
+silly resolved     keywords: 
+silly resolved      [ 'cli',
+silly resolved        'nodejitsu',
+silly resolved        'cloud hosting',
+silly resolved        'platform-as-a-service',
+silly resolved        'deployment' ],
+silly resolved     version: '0.7.7',
+silly resolved     author: { name: 'Nodejitsu Inc.', email: 'support@nodejitsu.com' },
+silly resolved     repository: { type: 'git', url: 'git://github.com/nodejitsu/jitsu.git' },
+silly resolved     preferGlobal: true,
+silly resolved     dependencies: 
+silly resolved      { async: '0.1.x',
+silly resolved        cliff: '0.1.x',
+silly resolved        colors: '0.x.x',
+silly resolved        eyes: '0.1.x',
+silly resolved        nconf: '0.2.x',
+silly resolved        npm: '>= 1.0.100 < 1.1.0',
+silly resolved        ncp: '0.2.x',
+silly resolved        optimist: '0.2.x',
+silly resolved        'nodejitsu-api': '0.2.x',
+silly resolved        pkginfo: '0.2.x',
+silly resolved        prompt: '0.1.x >=0.1.7',
+silly resolved        request: '2.2.x',
+silly resolved        'require-analyzer': '0.4.x',
+silly resolved        rimraf: '1.0.x',
+silly resolved        winston: '0.5.x',
+silly resolved        semver: '1.0.x' },
+silly resolved     devDependencies: 
+silly resolved      { 'it-is': '0.x.x',
+silly resolved        nodemock: '0.2.9beta',
+silly resolved        'mock-request': '0.1.x >=0.1.2',
+silly resolved        vows: '0.5.x' },
+silly resolved     bin: { jitsu: './bin/jitsu' },
+silly resolved     main: './lib/jitsu',
+silly resolved     scripts: { test: 'vows test/commands/*-test.js test/*-test.js --isolate --spec' },
+silly resolved     engines: { node: '>= 0.4.0' },
+silly resolved     _npmUser: { name: 'hij1nx', email: 'hij1nx@me.com' },
+silly resolved     _id: 'jitsu@0.7.7',
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.0-3',
+silly resolved     _nodeVersion: 'v0.6.9',
+silly resolved     _defaultsLoaded: true } ]
+info into /usr/local/lib jitsu@0.7.7
+info installOne jitsu@0.7.7
+info unbuild /usr/local/lib/node_modules/jitsu
+verbose caching /usr/local/lib/node_modules/jitsu/package.json
+verbose loadDefaults jitsu@0.7.7
+info preuninstall jitsu@0.7.7
+info uninstall jitsu@0.7.7
+verbose unbuild jitsu@0.7.7 [ true,
+verbose unbuild jitsu@0.7.7   '/usr/local/lib/node_modules',
+verbose unbuild jitsu@0.7.7   '/usr/local/lib/node_modules' ]
+verbose binRoot [ '/usr/local/bin', { jitsu: './bin/jitsu' } ]
+info postuninstall jitsu@0.7.7
+verbose from cache /Users/paolo/.npm/jitsu/0.7.7/package/package.json
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /usr/local/lib/node_modules/jitsu
+silly gunzTarPerm modes [ '755', '644' ]
+ERR! Error: UNKNOWN, unknown error '/usr/local/lib/node_modules'
+ERR! You may report this log at:
+ERR!     <http://github.com/isaacs/npm/issues>
+ERR! or email it to:
+ERR!     <npm-@googlegroups.com>
+ERR! 
+ERR! System Darwin 11.2.0
+ERR! command "node" "/usr/local/bin/npm" "install" "jitsu" "-g"
+ERR! cwd /Users/paolo/workroot/git/hij1nx/node-chat
+ERR! node -v v0.6.9
+ERR! npm -v 1.1.0-3
+ERR! path /usr/local/lib/node_modules
+ERR! fstream_path /usr/local/lib/node_modules/___jitsu.npm
+ERR! fstream_type Directory
+ERR! fstream_class DirWriter
+ERR! code UNKNOWN
+ERR! message UNKNOWN, unknown error '/usr/local/lib/node_modules'
+ERR! errno {}
+ERR! fstream_stack Object.oncomplete (/usr/local/lib/node_modules/npm/node_modules/fstream/lib/writer.js:161:23)
+verbose exit [ 1, true ]

@@ -1,11 +1,19 @@
 {
-  "name": "chat",
   "description": "A simple chat application",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "General Assembly <info@generalassemb.ly>",
   "dependencies": {
     "socket.io": "*",
-    "node-static": "*"
+    "node-static": "*",
+    "socket.io-client": "*",
+    "uglify-js": "*"
   },
-  "engines": { "node": "*" }
+  "engines": {
+    "node": "*"
+  },
+  "subdomain": "xyz",
+  "scripts": {
+    "start": "/server/server.js"
+  },
+  "name": "test7"
 }
