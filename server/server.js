@@ -1,12 +1,13 @@
 
   var fs = require('fs'),
+    path = require('path'),
     sio = require('socket.io'),
     static = require('node-static');
 
   var app = require('http').createServer(handler);
   app.listen(8000);
 
-  var file = new static.Server('./public/');
+  var file = new static.Server(path.join(__dirname, '..', 'public'));
 
   function handler(req, res) {
     file.serve(req, res);
