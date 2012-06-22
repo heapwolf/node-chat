@@ -1,10 +1,10 @@
- 
+
   var fs = require('fs'),
     sio = require('socket.io'),
     static = require('node-static');
 
   var app = require('http').createServer(handler);
-  app.listen(80);
+  app.listen(8000);
 
   var file = new static.Server('./public/');
 
@@ -12,23 +12,23 @@
     file.serve(req, res);
   }
 
-  var io = sio.listen(app), 
+  var io = sio.listen(app),
     nicknames = {};
 
   io.sockets.on('connection', function (socket) {
-    
+
     socket.on('user message', function (msg) {
-      
+
       socket.broadcast.emit('user message', socket.nickname, msg);
     });
 
     socket.on('nickname', function (nick, fn) {
       if (nicknames[nick]) {
-        
+
         fn(true);
-      } 
+      }
       else {
-        
+
         fn(false);
         nicknames[nick] = socket.nickname = nick;
         socket.broadcast.emit('announcement', nick + ' connected');
@@ -37,9 +37,9 @@
     });
 
     socket.on('disconnect', function () {
-      
+
       if (!socket.nickname) {
-        
+
         return;
       }
 
