@@ -154,6 +154,11 @@ label {
 #send-message {
   position: relative;
 }
+
+#send-message div {
+  text-align: center;
+}
+
 #send-message input {
   border: none;
   height: 40px;
@@ -173,14 +178,13 @@ label {
   outline: 0;
 }
 
-#send-message button {
-  margin: 20px 0 20px -55px;
-  left: 50%;
+#send-message button, div.filebutton {
+  margin: 20px 0;
   width: 110px;
   position: relative;
 }
 
-button {
+button, div.filebutton {
   margin: 0;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -207,5 +211,22 @@ button:focus {
   background: #009cb8;
   box-shadow: inset 0 1px 1px rgba(255, 255, 255, .7),
              inset 0 0 10px #007287;
+}
+
+div.filebutton {
+  padding: 2px 0 3px 0;
+  position: relative;
+  overflow: hidden;
+  width: 150px !important;
+}
+
+.filebutton input#imagefile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  margin: 0;
 }
 

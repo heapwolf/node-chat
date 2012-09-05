@@ -20,6 +20,7 @@
   });
 
   socket.on('user message', message);
+  socket.on('user image', image);
   socket.on('reconnect', function () {
     $('#lines').remove();
     message('System', 'Reconnected to the server');
@@ -35,6 +36,10 @@
 
   function message (from, msg) {
     $('#lines').append($('<p>').append($('<b>').text(from), msg));
+  }
+
+  function image (from, base64Image) {
+    $('#lines').append($('<p>').append($('<b>').text(from), '<img src="' + base64Image + '"/>'));
   }
 
   //
@@ -63,4 +68,15 @@
     function clear () {
       $('#message').val('').focus();
     };
+
+    $('#imagefile').bind('change', function(e){
+      var data = e.originalEvent.target.files[0];
+      var reader = new FileReader();
+      reader.onload = function(evt){
+        image('me', evt.target.result);
+        socket.emit('user image', evt.target.result);
+      };
+      reader.readAsDataURL(data);
+      
+    });
   });
