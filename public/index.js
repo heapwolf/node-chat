@@ -34,7 +34,7 @@
   });
 
   function message (from, msg) {
-    $('#lines').append($('<p>').append($('<b>').text(from), msg));
+    $('#lines').append($('<p>').append($('<b>').text(from), $('<span>').text(msg)));
   }
 
   //
