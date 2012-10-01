@@ -1,6 +1,5 @@
-
 ## Synopsis
-This is a real-time chat server that uses socket.io
+This is very simple code that can be used to demonstrate the caveats and design issues associated with building real-time chat server that uses socket.io.
 
 ## Prerequisites 
 You will need to have node.js and npm installed.
