@@ -19,8 +19,12 @@
   io.sockets.on('connection', function (socket) {
 
     socket.on('user message', function (msg) {
-
       socket.broadcast.emit('user message', socket.nickname, msg);
+    });
+
+    socket.on('user image', function (msg) {
+      console.log(msg);
+      socket.broadcast.emit('user image', socket.nickname, msg);
     });
 
     socket.on('nickname', function (nick, fn) {
